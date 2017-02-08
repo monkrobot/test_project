@@ -27,5 +27,4 @@
 #print('group_b',group_b)
 
 print('hello world!')
-print("hello everybody")
-print("I try to setting my git")
+print('I hope I did not break git')
