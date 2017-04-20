@@ -1,10 +1,9 @@
-import mymod
-5454
-54
-51
-1
-4
+import mypkg.mymod
+import imp
 
-print(mymod.countLines('my.py'))
-print(mymod.countChars('my.py'))
-print(mymod.test('mymod.py'))
+print(mypkg.mymod.countLines('my.py'))
+print(mypkg.mymod.countChars('my.py'))
+print('reload')
+imp.reload(mypkg.mymod)
+print('after reload')
+print(mypkg.mymod.test('my.py'))

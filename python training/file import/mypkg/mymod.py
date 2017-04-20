@@ -1,4 +1,4 @@
-
+#import my
 
 def countLines(name):
     f = open(name)
@@ -16,4 +16,6 @@ def test(name):
 
 #print(countLines('my.py'))
 #print(countChars('my.py'))
-#print(test('mymod.py'))
+if __name__ != '__main__':
+    print("\nif\n")
+    print(test('my.py'))
