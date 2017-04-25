@@ -10,15 +10,14 @@ def user_choice_func():
     except:
         print('No such element, try again')
         user_choice_func()
-user_choice = user_choice_func()
-print("user choice is:", user_choice)
+
 def computer_choice_func():
     computer_choice = random.randint(0, 2)
     computer_choice_text = items[computer_choice]
     return computer_choice_text,computer_choice
 
-def counting(user_choice):
-    #user_choice = user_choice_func()
+def counting(user_choice_func):
+    user_choice = user_choice_func()
     print('user:', user_choice)
     computer_choice = computer_choice_func()
     print('computer_choice:', computer_choice[0])
@@ -29,7 +28,7 @@ def counting(user_choice):
     else:
         print('user lose')
 
-counting(user_choice)
+counting(user_choice_func)
 
 
 
