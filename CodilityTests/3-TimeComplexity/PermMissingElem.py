@@ -1,4 +1,6 @@
 #Find missed element in list
+#100%
+
 import time
 l = []
 N = 100000

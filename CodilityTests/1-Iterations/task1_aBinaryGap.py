@@ -1,4 +1,6 @@
 #This functions shows the max of zeros between '1' and '1'
+#100%
+
 def solution(N):
     binary_value = bin(N)[2:]
     print('binary_value:', binary_value)

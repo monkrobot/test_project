@@ -1,8 +1,9 @@
 #Find a minimal result of slices sum(A[:(P + 1)]) - sum(A[(P + 1):])
+#problems with work speed 50%
 
 #import math
 #def solution(A):
-#    minimal = math.fabs(sum(A[:-1]))
+#    minimal = float('inf')
 #    for P in range(len(A)-1):
 #        print(A[:(P+1)])
 #        print(A[(P+1):])
@@ -15,7 +16,7 @@
 
 def solution(A):
 
-    minimal = abs(sum(A[:-1]))
+    minimal = float('inf')
     print('minimal is here:',minimal)
     for P in range(len(A)-1):
         print(A[:(P+1)])
@@ -28,7 +29,7 @@ def solution(A):
             continue
     return minimal
 
-A = [100, 1, -8, 5, 10]
+A = [100, -100]
 print('solution is: ', solution(A))
 print('sumA', sum(A))
 

@@ -1,3 +1,6 @@
+#Find element, which doesn't repeated
+#problems with work speed 66%
+
 def solution(A):
     B = A[1:]
     element = A[0]

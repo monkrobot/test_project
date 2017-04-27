@@ -1,3 +1,6 @@
+#Rotate list [1,2,3,4] to [4,1,2,3] for operation(one rotation)
+#problems with work speed (75%)
+
 def solution(A, K):
     if A == []:
         B = A

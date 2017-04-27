@@ -1,4 +1,5 @@
 #What is the min number of jumps, which length is D, to achieve position Y from position X
+#100%
 import math
 def solution(X,Y,D):
 
