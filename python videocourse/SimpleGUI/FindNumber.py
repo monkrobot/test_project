@@ -1,12 +1,16 @@
 import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
 import random
-number = float('inf')
+#number = float('inf')
 user_numb = -1
 
+
 def number_generate():
-    global number
+    #global number
     number = random.randint(0,100)
     print(number)
+    return number
+
+number = number_generate()
 
 def func123(user_number):
     global user_numb
