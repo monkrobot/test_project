@@ -30,7 +30,8 @@ class Dealler(Random_card):
         card_choice = Random_card.choise_card(self)
         card_loc = (card_center[0] + card_size[0] * RANKS.index(card_choice[0]),
                     (card_center[1] + card_size[1] * SUITS.index(card_choice[1])))
-        return(card_loc)
+        if counter < 1:
+            return(card_loc)
 
 if counter < 1:
     card_draw = Dealler()

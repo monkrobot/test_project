@@ -97,6 +97,3 @@ def solution(S, P, Q):
 
 print(solution(S,P,Q))
 
-class Class123():
-    def func123(self):
-        self.action()
