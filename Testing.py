@@ -1,37 +1,39 @@
-class MyList:
-    def __init__(self, somelist):
-        self.mylist = []
-        for x in somelist: self.mylist.append(x)
+class Testclass:
+    def __init__(self, myset):
+        #self.myset = set(myset)
+        self.myset = myset
 
-    def __add__(self, other):
-        return self.mylist + other
+    def __and__(self, other):
+        if type(other) == set:
+            return self.myset.intersection(other)
+
+    def __or__(self, other):
+        if type(other) == set:
+            return self.myset.union(other)
+
+    def __str__(self):
+        return str(self.myset)
 
     def __getitem__(self, item):
-        return self.mylist.__getitem__(item)
+        return self.myset[item]
 
-    def append(self, item):
-        self.mylist.append(item)
-        return self.mylist
+    def __iter__(self):
+        return self
+
+    #def __next__(self):
+    #    if self.value == self.stop:
+    #        raise StopIteration
+    #    self.value += 1
+    #    return self.value ** 2
 
 
-class MyListSub(MyList):
-    count = 0
-    def __init__(self):
-        MyList.__init__()
-        MyListSub.count = MyListSub.count + 1
+#setA = Testclass('asdbc')
+setA = Testclass([1,3,5])
+setB = {'a','b','c','1'}
 
-    def printCount(self):
-        print('count is: ', MyListSub.count)
+#print(setA & setB)
 
-m = MyList([1,2,3,4,5])
-print(m[2:4])
-print(m + [1])
 
-print(m.append(15))
-
-k = MyList([1,2,3,4,5])
-d = MyList([1,2,3,4,5])
-f = MyListSub([1,2,3,4,5])
-f.printCount()
-
-print(f + [1])
+print('lsjdg')
+for i in setA:
+    print(i, end=' ')
