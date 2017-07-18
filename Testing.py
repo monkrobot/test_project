@@ -1,39 +1,31 @@
-class Testclass:
-    def __init__(self, myset):
-        #self.myset = set(myset)
-        self.myset = myset
+class Actor:
+    def line(self):
+        print(self.name +':', str(self.says()))
 
-    def __and__(self, other):
-        if type(other) == set:
-            return self.myset.intersection(other)
+class Scene:
+    def __init__(self):
+        self.cust = Customer()
+        self.clerk = Clerk()
+        self.par = Parrot()
 
-    def __or__(self, other):
-        if type(other) == set:
-            return self.myset.union(other)
+    def action(self):
+        self.cust.line()
+        self.clerk.line()
+        self.par.line()
 
-    def __str__(self):
-        return str(self.myset)
+class Customer(Actor):
+    name = 'cust'
+    def says(self):
+        return("Customer")
 
-    def __getitem__(self, item):
-        return self.myset[item]
+class Clerk(Actor):
+    name = 'Cle'
+    def says(self):
+        return("Clerk")
 
-    def __iter__(self):
-        return self
+class Parrot(Actor):
+    name = 'Par'
+    def says(self):
+        return ("Parrot")
 
-    #def __next__(self):
-    #    if self.value == self.stop:
-    #        raise StopIteration
-    #    self.value += 1
-    #    return self.value ** 2
-
-
-#setA = Testclass('asdbc')
-setA = Testclass([1,3,5])
-setB = {'a','b','c','1'}
-
-#print(setA & setB)
-
-
-print('lsjdg')
-for i in setA:
-    print(i, end=' ')
+Scene().action()
