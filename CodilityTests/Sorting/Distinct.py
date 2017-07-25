@@ -10,7 +10,7 @@ for k in range(n):
     newk = random.randrange(1, 10)
     A.append(newk)
 
-print(A)
+print('A: ', A)
 
 #my solve
 B = sorted(A)
