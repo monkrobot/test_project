@@ -10,5 +10,8 @@ if B[0]*B[1]*B[-1] > B[-1]*B[-2]*B[-3]:
 else:
     maxprod = B[-1] * B[-2] * B[-3]
 
+#best
+#maxprod = max(B[0] * B[1] * B[-1], B[-1] * B[-2] * B[-3])
+
 print(maxprod)
 
