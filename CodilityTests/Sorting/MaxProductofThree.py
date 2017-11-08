@@ -1,3 +1,5 @@
+#Need to find the max product of three numbers in list
+
 A = [-3, 1, 2, -2, 5, 6]
 
 #100%

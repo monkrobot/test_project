@@ -1,31 +1,38 @@
-class Actor:
-    def line(self):
-        print(self.name +':', str(self.says()))
+#Need to find the max product of three numbers in list
 
-class Scene:
-    def __init__(self):
-        self.cust = Customer()
-        self.clerk = Clerk()
-        self.par = Parrot()
+A = [1,2,-3]
+#print(A.pop(A.index(max(A))))
+print(A)
 
-    def action(self):
-        self.cust.line()
-        self.clerk.line()
-        self.par.line()
+#88%
 
-class Customer(Actor):
-    name = 'cust'
-    def says(self):
-        return("Customer")
+max1 = (A.pop(A.index(max(A))))
+max2 = (A.pop(A.index(max(A))))
+max3 = (A.pop(A.index(max(A))))
+if len(A) >= 2:
+    min1 = (A.pop(A.index(min(A))))
+    min2 = (A.pop(A.index(min(A))))
+    if min1*min2*max1 < max1*max2*max3:
+        maxProd = max1 * max2 * max3
+    else:
+        maxProd = min1 * min2 * max1
+else:
+    maxProd = max1 * max2 * max3
 
-class Clerk(Actor):
-    name = 'Cle'
-    def says(self):
-        return("Clerk")
 
-class Parrot(Actor):
-    name = 'Par'
-    def says(self):
-        return ("Parrot")
 
-Scene().action()
+print(maxProd)
+
+# 44%
+#maxProd = - float('inf')
+#
+#for i in range(len(A)-2):
+#    for j in range(i+1,len(A)-1):
+#        for k in range(j+1,len(A)):
+#            maxProdTry = A[i] * A[j] * A[k]
+#            if maxProd < maxProdTry:
+#                maxProd = maxProdTry
+#                print(A[i], A[j], A[k])
+#                print(maxProd)
+#
+#print('result: ', maxProd)
