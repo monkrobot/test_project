@@ -111,4 +111,50 @@
 #print("Result of +:", result.read())
 
 
-#Descriptors
+##Descriptors
+#class TestDescriptor:
+#    def __init__(self, new_attr):
+#        self.new_attr = new_attr
+#
+#    def __get__(self, obj, obj_type):
+#        return self.new_attr
+#
+#    def __set__(self, obj, value):
+#        self.new_attr = value
+#
+#class Test:
+#    attr = TestDescriptor(15)
+#
+#obj = Test()
+#print(obj.attr)
+#obj.attr = 34
+#print(obj.attr)
+
+
+#Metaclasses
+
+
+#Descriptor with commission
+class Value():
+    def __int__(self, amount):
+        self.amount = amount
+
+    def __get__(self, instance, owner):
+        return self.amount
+
+    def __set__(self, instance, value):
+        self.amount = value
+        return self.amount
+
+
+class Account:
+    amount = Value()
+
+    def __init__(self, commission):
+        self.commission = commission
+
+
+obj = Account(0.1)
+obj.amount = 100
+print(obj.amount)
+
