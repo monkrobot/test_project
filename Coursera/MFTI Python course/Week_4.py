@@ -134,27 +134,40 @@
 #Metaclasses
 
 
-#Descriptor with commission
-class Value():
-    def __int__(self, amount):
-        self.amount = amount
-
-    def __get__(self, instance, owner):
-        return self.amount
-
-    def __set__(self, instance, value):
-        self.amount = value
-        return self.amount
-
-
-class Account:
-    amount = Value()
-
-    def __init__(self, commission):
-        self.commission = commission
-
-
-obj = Account(0.1)
-obj.amount = 100
-print(obj.amount)
-
+##Descriptor with commission
+#class Value():
+#    def __init__(self, amount=None):
+#        self.amount = amount
+#
+#    def __get__(self, instance, owner):
+#        return self.amount # - Account().commission * 100
+#
+#    def __set__(self, instance, value):
+#        self.amount = value - Account.comm*value
+#        return self.amount
+#
+#
+#class Account:
+#    amount = Value()
+#    comm = None
+#
+#    def __init__(self, commission):
+#        self.commission = commission
+#        Account.comm = self.commission
+#
+#
+#obj = Account(0.1)
+#obj.amount = 100
+#print(obj.amount)
+#print(Account(0.1).commission)
+#print('obj:', obj.comm)
+#
+#obj1 = Account(0.5)
+#obj1.amount = 150
+#print(obj1.amount)
+#print('obj1:', obj1.comm)
+#
+#obj2 = Account(0.2)
+#obj2.amount = 200
+#print(obj2.amount)
+#print('obj1:', obj2.comm)
