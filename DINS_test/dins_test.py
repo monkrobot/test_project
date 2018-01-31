@@ -1,4 +1,5 @@
 #Try to git again
+#try to git from msi
 
 #There is a CSV file with raw data of user’s requests to a server for one day. https://drive.google.com/file/d/0B8K6jIyGsfV-VGs1VkU1cnJ0NUk/view?usp=sharing
 #Each request has timestamp(ts), api name(api_name) , http method(mtd) and response http code(cod).
