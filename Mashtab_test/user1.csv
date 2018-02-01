@@ -1,4 +1,4 @@
 module,test,func
 module1,test1,foo1
-module1,test2,foo3,foo2
-module2,test3
+module1,test2,foo3
+module2,test3,foo2

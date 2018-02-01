@@ -14,13 +14,14 @@ for i in users:
         if file_json["commands"] == []:
             file_json['commands'].append({'param': [{'user': i}], 'function': user.loc[j]['func'], 'name': user.loc[j][
                 'test'], 'module': user.loc[j]['module']})
-        else:
-            for i_command in range(len(file_json["commands"])):
-                if (user.loc[j]['module'] == file_json['commands'][i_command]['module']) and (user.loc[j]['test'] ==
-                        file_json['commands'][i_command]['name']) and (user.loc[j]['func'] ==
-                        file_json['commands'][i_command]['function']):
-                    file_json['commands'].append(
-                        {'param': [{'user': i}], 'function': user.loc[j]['func'], 'name': user.loc[j][
-                            'test'], 'module': user.loc[j]['module']})
+
+        #This code gives an error
+        #else:
+        #    for i_command in range(len(file_json["commands"])):
+        #        if (user.loc[j]['module'] == file_json['commands'][i_command]['module']): #and (user.loc[j]['test'] ==
+        #                #file_json['commands'][i_command]['name']) and (user.loc[j]['func'] ==
+        #                #file_json['commands'][i_command]['function']):
+        #            file_json['commands'].append(
+        #                {'param': [{'user': i}], 'function': user.loc[j]['func'], 'name': user.loc[j]['test'], 'module': user.loc[j]['module']})
 
 print(file_json)
