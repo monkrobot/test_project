@@ -1,18 +1,7 @@
 import pandas as pd
 import json
 
-users = ['user1'] #, 'user2', 'user3']
-
-#user1 = pd.read_csv('user1.csv', sep=',')
-##print('df1:\n', df1)
-#
-#user2 = pd.read_csv('user2.csv', sep=',')
-##print('df2:\n', df2)
-#
-#user3 = pd.read_csv('user3.csv', sep=',')
-##print('df3:\n', df3)
-
-
+users = ['user1', 'user2', 'user3']
 
 #file_json = {'commands': [{'param': [], 'function': '', 'name': '', 'module': ''}]}
 file_json = {'commands': []}
