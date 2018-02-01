@@ -1,3 +1,5 @@
+#Test project for job vacancy "Python programmer" by Alexander Denisov
+
 import pandas as pd
 import json
 
