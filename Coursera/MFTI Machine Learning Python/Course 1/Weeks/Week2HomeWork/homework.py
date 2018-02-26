@@ -71,7 +71,8 @@
 
 #Exercize 2
 
-import scipy
+from scipy import linalg
+import plotly
 import numpy as np
 
 A = [[1,5,1],
@@ -82,7 +83,7 @@ b = [[1],
      [8],
      [15]]
 
-answer = scipy.linalg.solve(A,b)
+answer = linalg.solve(A,b)
 
 print(answer)
 print(np.dot(A, answer))
