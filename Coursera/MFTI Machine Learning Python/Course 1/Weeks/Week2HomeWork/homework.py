@@ -70,9 +70,15 @@
 
 
 #Exercize 2
+import math
+
+def func1(x):
+     f = math.sin(x/5)*math.exp(x/10)+5*math.exp(-x/2)
+     return(f)
+print(func1(1))
+print(func1(5))
 
 from scipy import linalg
-import plotly
 import numpy as np
 
 A = [[1,5,1],
