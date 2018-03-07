@@ -40,32 +40,33 @@
 #print(result)
 
 ##Exercise3
-import math
-from numpy import arange
-import matplotlib.pyplot as plt
-from scipy.optimize import minimize, differential_evolution
+#import math
+#from numpy import arange
+#import matplotlib.pyplot as plt
+#from scipy.optimize import minimize, differential_evolution
+#
+#def func1(x):
+#    f = math.sin(x / 5.) * math.exp(x / 10.) + 5 * math.exp(-x / 2.)
+#    return f
+#
+#def h_func(x):
+#    h = int(func1(x))
+#    return h
+#
+#print('h_func(90):',h_func(90))
+#
+#x = [k for k in arange(0, 30, 0.01)]
+#y = [h_func(x) for x in x]
+#
+#x0 = 2
+#res = minimize(h_func, x0, method='BFGS', tol=1e-6)
+#print('res:', res.x)
+#
+#bounds = [(1, 45)]
+#result = differential_evolution(h_func,bounds)
+#print('result:', result)
+#print('result.x:', result.x)
+#
+#plt.plot(x,y)
+#plt.show()
 
-def func1(x):
-    f = math.sin(x / 5.) * math.exp(x / 10.) + 5 * math.exp(-x / 2.)
-    return f
-
-def h_func(x):
-    h = int(func1(x))
-    return h
-
-print('h_func(90):',h_func(90))
-
-x = [k for k in arange(0, 30, 0.01)]
-y = [h_func(x) for x in x]
-
-x0 = 2
-res = minimize(h_func, x0, method='BFGS', tol=1e-6)
-print('res:', res.x)
-
-bounds = [(1, 45)]
-result = differential_evolution(h_func,bounds)
-print('result:', result)
-print('result.x:', result.x)
-
-plt.plot(x,y)
-plt.show()
