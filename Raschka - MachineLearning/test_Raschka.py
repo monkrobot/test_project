@@ -28,10 +28,24 @@ import matplotlib.pyplot as plt
 
 
 ##Doesn't work
-def test(new_list):
-    r = np.random.permutation(len(new_list))
-    print('r', r)
-    return new_list[r]
+#def test(new_list):
+#    r = np.random.permutation(len(new_list))
+#    print('r', r)
+#    return new_list[r]
+#
+#new_list = [x for x in 'python']
+#print(test(new_list))
 
-new_list = [x for x in 'python']
-print(test(new_list))
+class Node:
+    def __init__(self, data, next='None'):
+        self.data = data
+        self.next = next
+
+    def return_data(self):
+        return self.data
+
+seq = ' Node(1,  Node(2,  Node(3, Node(5, Node(18, Node(134))))))'
+seq_num_dot = seq.find(',')
+new_seq = 'm = ' + seq[:seq_num_dot] + ',' + str([seq[seq_num_dot + 1:][:-1]]) + ')'
+exec(new_seq)
+print(m.data)
