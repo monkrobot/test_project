@@ -6,6 +6,8 @@ def func(lng, width):
     #if lng == width:
     #    return "null"
     #elif lng > width:
+
+    #Try to make lng > width
     if lng < width:
         cap = lng
         lng = width
