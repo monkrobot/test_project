@@ -25,5 +25,30 @@
 #
 #print(time.time()-start )
 
-import sys
-print(sys.platform)
+
+#Euclidean algorithm
+import time
+
+a = 30
+b = 18
+start = time.time()
+def func(a,b):
+    while a != 0 and b != 0:
+        if a > b:
+            a = a%b
+        else:
+            b = b%a
+    return a+b
+    #if a > b:
+    #    maxnum = a
+    #    minnum = b
+    #else:
+    #    maxnum = b
+    #    minnum = a
+    #if maxnum % minnum == 0:
+    #    return minnum
+    #else:
+    #    return func(minnum, maxnum%minnum)
+
+print(func(a,b))
+print(time.time() - start)
