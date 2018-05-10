@@ -1,21 +1,31 @@
-lng = 16
-width = 3
+lng = 3
+width = 5
 
 def func(lng, width):
     answer = []
-    #if lng == width:
-    #    return "null"
-    #elif lng > width:
+    if lng == width:
+        return "null"
 
-    #Try to make lng > width
     if lng < width:
         cap = lng
         lng = width
         width = cap
 
-    while
-    answer.append(width)
-    lng = lng - width
-    return func(lng, width)
-    else:
-        answer.append((width-lng))
+    while lng != 0:
+        if width < lng:
+            answer.append(width)
+            lng = lng - width
+        elif lng == 1:
+            for _ in range(width):
+                answer.append(1)
+            lng = 0
+        elif width > lng:
+            cap = lng
+            lng = width
+            width = cap
+        else:
+            answer.append(width)
+            return answer
+    return answer
+
+print(func(lng,width))
