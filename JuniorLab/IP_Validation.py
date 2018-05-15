@@ -8,7 +8,7 @@ def isvaliip(str):
     if len(ip) < 4:
         return False
     for i in ip:
-        if i in range(256):
+        if i < 256 and i > 0:
             continue
         else:
             return False
