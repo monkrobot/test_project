@@ -1,6 +1,11 @@
 '''
 Given a list of words. Need to concatanate words together in sentence with capitalized first word
 and a dot in the end
+
+Предложение должно начинаться с заглавной буквы.
+В конце предложения должна стаять точка.
+Между словами должен быть пробел.
+Не выполняйте никаких других действий над словами.
 '''
 
 def sentencify(text):

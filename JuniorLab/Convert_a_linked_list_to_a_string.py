@@ -1,4 +1,10 @@
-'''Need to write a function, which returns a string of class Node.data in form: 1 -> 2 -> 8 -> None'''
+'''
+Need to write a function, which returns a string of class Node.data in form: 1 -> 2 -> 8 -> None
+
+Создайте функцию stringify, которая принимает аргумент list/$list и возвращает строковое представление списка.
+Строка начинается с текущего значения, указанного в data/$data, затем следует символ пробела,
+направление связанности (" -> ") и снова пробел. Заканчиваться строка всегда должна (null/NULL)
+'''
 
 #class Node:
 #    def __init__(self, data, next='None'):
