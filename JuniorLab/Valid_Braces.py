@@ -10,8 +10,6 @@ def validbraces(braces):
     open_brac = ['(', '{', '[']
     close_brac = [')', '}', ']']
     sequence = []
-    #if braces[0] in close_brac:
-    #    return False
     for i in braces:
         if i in open_brac:
             sequence.append(i)
@@ -24,8 +22,6 @@ def validbraces(braces):
                     return False
             except:
                 return False
-            #else:
-            #    return False
     if sequence == []:
         return True
     else:
