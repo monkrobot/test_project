@@ -5,12 +5,13 @@ N! = 1 * 2 * 3 * 4 ... N
 '''
 
 def zeros(n):
-    fact = 1
-    if n == 0:
-        return 0
-    for i in range(1, n+1):
-        fact *= i
-    for j in str(fact):
-        print(j)
+    answer = 0
+    i = 5
+    while i <= n:
+        answer += n//i
+        i *= 5
+    return answer
 
-print(zeros(12))
+print(zeros(1000000000))
+#)249999998
+
