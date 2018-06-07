@@ -18,7 +18,7 @@ Need to build a house as follows:
    |___|___|___|
 '''
 
-n = 3
+n = 5
 
 def my_crib(n):
     ans = [[], [], [], []] #[top_line, roof, space, door]
@@ -45,4 +45,3 @@ def my_crib(n):
 
 
 print(my_crib(n))
-
