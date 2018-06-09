@@ -20,13 +20,19 @@ def choose_best_sum( t, k, ls):
     print(new_ls)
     print(items)
 
-   for last_item in range(items[1:]): #enumerate    #for last items in list 'items', which go
-       for item in new_ls[-k + 1, 0, -1]:           #from right to left in new_ls if sum > t
-           last_item = item #item in list 'items'
-           if sum(items) > t:
-       elif sum(items) < t:
-           for item in new_ls[1:]:
-               items[0] = item
+    for last_item in range(items[1:]): #enumerate    #for last items in list 'items', which go
+        for item in new_ls[-k + 1, 0, -1]:           #from right to left in new_ls if sum > t
+            last_item = item #item in list 'items'
+            if sum(items) > t:
+
+
+
+
+
+
+        elif sum(items) < t:
+            for item in new_ls[1:]:
+                items[0] = item
 
 
 
@@ -70,5 +76,13 @@ def choose_best_sum( t, k, ls):
 #    return answer
 
 print(choose_best_sum( t, k, ls))
+
+
+
+
+
+
+
+
 
 
