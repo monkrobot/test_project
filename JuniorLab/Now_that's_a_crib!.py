@@ -42,3 +42,12 @@ def my_crib(n):
         answer.extend(i)
     return ''.join(answer)
 
+
+
+
+
+
+
+
+
+
