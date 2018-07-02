@@ -1,7 +1,8 @@
-def func_generator():
-    for i in range(10):
-        yield i+100
+array = [[1, 2, 3],
+         [8, 9, 4],
+         [7, 6, 5]]
 
-x=func_generator()
-print(next(x))
-print(next(x))
+new_ar = array.copy()
+new_ar[2] = []
+print(array)
+print('new:', new_ar)
