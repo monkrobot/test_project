@@ -5,34 +5,43 @@
 '''
 
 t = 100
-k = 2
+k = 4
 ls = [100, 76, 56, 44, 89, 73, 68, 56, 64, 123, 2333, 144, 50, 132, 123, 34, 89]
 
 def choose_best_sum( t, k, ls):
     answer = 0
     new_ls = sorted(ls)
-    items = [None]*k    #list of change items of size k
+    items = [None] * k  # list of change items of size k
     for num in range(k):
-        if num == 0:
-            items[num] = new_ls[num]
-        else:
-            items[num] = new_ls[-num]
-    print(new_ls)
+        items[num] = new_ls[-num-1]
     print(items)
 
-    for last_item in range(items[1:]): #enumerate    #for last items in list 'items', which go
-        for item in new_ls[-k + 1, 0, -1]:           #from right to left in new_ls if sum > t
-            last_item = item #item in list 'items'
+    for i in range(len(ls)):
+        for item in items:
             if sum(items) > t:
 
 
 
+print(choose_best_sum(t,k,ls))
 
 
 
-        elif sum(items) < t:
-            for item in new_ls[1:]:
-                items[0] = item
+
+
+
+    #items = [None]*k    #list of change items of size k
+    #for num in range(k):
+    #    if num == 0:
+    #        items[num] = new_ls[num]
+    #    else:
+    #        items[num] = new_ls[-num]
+    #print(new_ls)
+    #print(items)
+#
+    #for last_item in range(items[1:]): #enumerate    #for last items in list 'items', which go
+    #    for item in new_ls[-k + 1, 0, -1]:           #from right to left in new_ls if sum > t
+    #        last_item = item #item in list 'items'
+    #        if sum(items) > t:
 
 
 
