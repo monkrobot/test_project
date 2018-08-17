@@ -28,7 +28,12 @@ def counting(user_choice_func):
     else:
         print('user lose')
 
-counting(user_choice_func)
+while True:
+    m = input('Begin?')
+    if m == '':
+        counting(user_choice_func)
+    else:
+        break
 
 
 
