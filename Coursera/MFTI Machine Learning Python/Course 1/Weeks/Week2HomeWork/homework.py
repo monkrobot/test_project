@@ -67,6 +67,9 @@
 #print('index 16:', answer1[16])
 ##print(answer1[16])
 #print(data[answer1.index(sort_answer1[-1])])
+#
+##answers: index 0: 0.9527544408738466
+##         index 16: 0.956644501523794
 
 
 #Exercize 2
@@ -91,5 +94,5 @@ b = [[1],
 
 answer = linalg.solve(A,b)
 
-print(answer)
-print(np.dot(A, answer))
+print('answer:\n', answer)
+print('np.dot(A, answer):\n', np.dot(A, answer))
