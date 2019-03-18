@@ -29,21 +29,70 @@
 #print(best((lambda x: '{0}'.format(x)), ('buy'), _reps = 1000))
 
 
-def decor(func):
-    def wrapper(*args, **kwargs):
-        print('wrapper')
-        return func(*args, **kwargs)
-    return wrapper
+# def decor(func):
+#     def wrapper(*args, **kwargs):
+#         print('wrapper')
+#         return func(*args, **kwargs)
+#     return wrapper
+#
+# @decor
+# def test(text):
+#     return (f'hello, {text}')
+#
+# @decor
+# def test1(numb):
+#     print(f'one plus {numb} is {1 + numb}')
+#
+# print(test('Ol'))
+# test1(12)
+#
+# help(test1)
 
-@decor
-def test(text):
-    return (f'hello, {text}')
+a = 7
+b = 20
+c = 4
+queue = [1,5,3,45,2]
+letters = [a,b,c]
+for j in range(len(letters)):
+    for k in range(j, len(letters)):
+        if
 
-@decor
-def test1(numb):
-    print(f'one plus {numb} is {1 + numb}')
+for i in queue:
 
-print(test('Ol'))
-test1(12)
+    if a<b and a<c:
+        a += i
+    elif b<a and b<c:
+        b += i
+    else:
+        c += i
 
-help(test1)
+print(a)
+print(b)
+print(c)
+print("max:", max(a,b,c))
+
+
+
+
+
+
+
+# def queue_time(customers, n):
+#     # if customers == []:
+#     #     customers = [0]
+#     # print(min(customers[:n]))
+#
+#     answer = []
+#     for i in range(n):
+#         answer.append([customers[i]])
+#     for j in range(customers[(n - 1):]):
+#         min(answer).append(j)
+#
+#         # customer = (x for x in customers[(n-1):])
+#
+# queue_time([1,2,3,4,5], 1)
+# queue_time([1,2,3,4,5], 100)
+
+
+
+
