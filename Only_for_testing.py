@@ -45,36 +45,11 @@
 #
 # print(test('Ol'))
 # test1(12)
-#
 # help(test1)
 
-a = 7
-b = 20
-c = 4
-queue = [1,5,3,45,2]
-letters = [a,b,c]
-for j in range(len(letters)):
-    for k in range(j, len(letters)):
-        if
+from math import ceil
 
-for i in queue:
-
-    if a<b and a<c:
-        a += i
-    elif b<a and b<c:
-        b += i
-    else:
-        c += i
-
-print(a)
-print(b)
-print(c)
-print("max:", max(a,b,c))
-
-
-
-
-
+print(ceil(1.1))
 
 
 # def queue_time(customers, n):
