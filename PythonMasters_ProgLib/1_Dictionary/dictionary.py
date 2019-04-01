@@ -30,9 +30,10 @@ if __name__ == "__main__":
     word_user = input("Enter a word: ")
 
     output = retrive_definition(word_user)
+    print(output)
 
-    if type(output) == list:
-        for item in output:
-            print("-", item)
-    else:
-        print("-", output)
+    #if type(output) == list:
+    #    for item in output:
+    #        print("-", item)
+    #else:
+    #    print("-", output)

@@ -47,9 +47,13 @@
 # test1(12)
 # help(test1)
 
-from math import ceil
 
-print(ceil(1.1))
+
+
+
+
+
+
 
 
 # def queue_time(customers, n):
