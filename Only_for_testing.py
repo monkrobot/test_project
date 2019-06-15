@@ -29,21 +29,49 @@
 #print(best((lambda x: '{0}'.format(x)), ('buy'), _reps = 1000))
 
 
-def decor(func):
-    def wrapper(*args, **kwargs):
-        print('wrapper')
-        return func(*args, **kwargs)
-    return wrapper
+# def decor(func):
+#     def wrapper(*args, **kwargs):
+#         print('wrapper')
+#         return func(*args, **kwargs)
+#     return wrapper
+#
+# @decor
+# def test(text):
+#     return (f'hello, {text}')
+#
+# @decor
+# def test1(numb):
+#     print(f'one plus {numb} is {1 + numb}')
+#
+# print(test('Ol'))
+# test1(12)
+# help(test1)
 
-@decor
-def test(text):
-    return (f'hello, {text}')
 
-@decor
-def test1(numb):
-    print(f'one plus {numb} is {1 + numb}')
 
-print(test('Ol'))
-test1(12)
 
-help(test1)
+
+
+
+
+
+
+# def queue_time(customers, n):
+#     # if customers == []:
+#     #     customers = [0]
+#     # print(min(customers[:n]))
+#
+#     answer = []
+#     for i in range(n):
+#         answer.append([customers[i]])
+#     for j in range(customers[(n - 1):]):
+#         min(answer).append(j)
+#
+#         # customer = (x for x in customers[(n-1):])
+#
+# queue_time([1,2,3,4,5], 1)
+# queue_time([1,2,3,4,5], 100)
+
+
+
+
