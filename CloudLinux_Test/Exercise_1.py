@@ -1,4 +1,4 @@
-A = [3,3,3,3,3,3,2,4,4]
+A = [2,2,3,4,3,3,2,2,1,1,2,2]
 
 valley = 0
 hill = 0
@@ -19,6 +19,7 @@ n = 0
 flag = 0
 
 for i in range(len(A)-1):
+    print(A[i])
     if A[i] == A[i+1]:
         continue
     elif A[i] > A[i+1] and flag <= 0:
